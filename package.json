@@ -1,0 +1,22 @@
+{
+  "name": "mine",
+  "version": "1.0.0",
+  "description": "mine",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/cicime/mine.git"
+  },
+  "keywords": [
+    "mine"
+  ],
+  "author": "cicime",
+  "license": "ISC"
+}
