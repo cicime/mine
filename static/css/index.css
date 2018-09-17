@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #292c33;
+  color: #fff;
+}
+
+.box {
+  font-size: 32px;
+  padding: 70px 0 0 50px;
+}
+
+.box p {
+  font-size: 12px;
+}
