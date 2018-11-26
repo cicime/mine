@@ -2,7 +2,7 @@ var express = require('express');
 const app = express();
 
 const ENV = process.env.NODE_ENV || 'development';
-const PORT = process.env.NODE_PORT || 8088;
+const PORT = 8088; // process.env.NODE_PORT || 8088;
 
 app.set('view engine', 'ejs')
 app.set('views', './views')
