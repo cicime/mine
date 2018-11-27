@@ -7,7 +7,7 @@ module.exports = {
     },
     env_production: {
       NODE_ENV: 'production',
-      NODE_PORT: 80
+      NODE_PORT: 8088
     }
   }]
 };
