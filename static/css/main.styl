@@ -1,0 +1,63 @@
+    
+random(min, max)
+    return floor(math(0, 'random')*(max - min + 1) + min)
+
+body
+    margin: 0
+    padding: 0
+    background: #292c33
+    color: #fff
+
+.box
+    position: absolute
+    top: 45%
+    left 50%
+    transform: translate(-50%, -50%)
+    text-align: center
+
+p
+    margin: 0
+    font-weight: 200
+    font-size 14px
+    opacity .5
+
+.glitch
+    position relative
+    margin 0
+    font-size 72px
+    line-height 1.1
+
+    &:after
+        content: attr(data-text)
+        position absolute
+        left 1px
+        top: 0
+        text-shadow: 2px 0 red
+        color: #fff
+        background: #292c33
+        overflow hidden
+        clip rect(0, 900px, 0, 0)
+        animation noise-anim 2s infinite linear alternate-reverse
+
+    &:before
+        content: attr(data-text)
+        position absolute
+        left -1px
+        top: 0
+        text-shadow: -2px 0 blue
+        color: #fff
+        background: #292c33
+        overflow hidden
+        clip rect(0, 900px, 0, 0)
+        animation noise-anim2 3s infinite linear alternate-reverse
+
+
+@keyframes noise-anim
+    for $i in 0..20
+        {round($i*(1/20)*100) + '%'}
+            clip rect(random(0, 100)px, 9999px, random(0, 100)px, 0)
+
+@keyframes noise-anim2
+    for $i in 0..20
+        {round($i*(1/20)*100) + '%'}
+            clip rect(random(0, 100)px, 9999px, random(0, 100)px, 0)
