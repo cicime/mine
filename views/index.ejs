@@ -7,7 +7,7 @@
   <title>白日梦的国度</title>
   <link rel=icon href="favicon.ico" type="image/ico">
   <link rel="stylesheet" href="css/main.css">
-
+  <% var num = Math.random()*2 >> 0 %>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152745301-1"></script>
   <script>
   window.dataLayer = window.dataLayer || [];
@@ -15,11 +15,16 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-152745301-1', { 'optimize_id': 'GTM-MJLS8CG'});
+  gtag('set', 'exp', 'HRLQXcEdT9WLg9WdJWQzRg.<%=num%>', )
   </script>
 </head>
 <body>
   <div class="box">
+    <% if (num) { %>
     <h1 class="glitch" data-text="Diodon">Diodon</h1>
+    <% } else { %>
+    <h1 class="glitch" data-text="大力出奇迹!">大力出奇迹!</h1>
+    <% } %>
     <p>· Hello Toma ·</p>
   </div>
 </body>

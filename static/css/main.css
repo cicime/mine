@@ -22,6 +22,7 @@ p {
   margin: 0;
   font-size: 72px;
   line-height: 1.1;
+  white-space: nowrap;
 }
 .glitch:after {
   content: attr(data-text);
