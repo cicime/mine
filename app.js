@@ -17,6 +17,7 @@ app.get('/', (req, res) => {
 })
 
 
+
 app.listen(PORT, function (error) {
   if (error) {
     console.log('ರೃ∀ರೃ 报错了！！！', error);
@@ -24,7 +25,9 @@ app.listen(PORT, function (error) {
   }
 
   console.log(`
+
     APP RUNNING ✧(≖ ◡ ≖✿  — ${ENV} - ${PORT}
     ${ENV === 'development' ? `http://127.0.0.1:${PORT}`: 'http://diodon.cc/'}
+
   `);
 })
