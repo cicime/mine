@@ -1,17 +1,11 @@
 FROM node:latest
 
+ENV NODE_ENV=production NODE_PORT=8080
+
 WORKDIR /usr/src/app
 
-COPY ./package.json .
-COPY ./package-lock.json .
-
-COPY ./ecosystem.config.js .
-COPY ./app.js .
-COPY ./views ./views
-COPY ./static ./static
+COPY ./ .
 
 RUN npm install --production --no-progress
-
-USER node
 
 CMD ["npm", "server"]
