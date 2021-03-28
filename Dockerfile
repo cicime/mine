@@ -8,4 +8,4 @@ COPY ./ .
 
 RUN npm install --production --no-progress
 
-CMD ["npm", "server"]
+CMD ["npm", "start"]

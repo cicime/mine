@@ -9,8 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node app.js",
-    "server": "pm2 start ecosystem.config.js --env production"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
