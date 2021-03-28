@@ -6,6 +6,7 @@ const PORT = process.env.NODE_PORT || 8088;
 
 app.set('view engine', 'ejs')
 app.set('views', './views')
+
 app.use(express.static('./static'))
 
 let count = 0;

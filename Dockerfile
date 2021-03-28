@@ -7,11 +7,11 @@ COPY ./package-lock.json .
 
 COPY ./ecosystem.config.js .
 COPY ./app.js .
-COPY ./views .
-COPY ./static .
+COPY ./views ./views
+COPY ./static ./static
 
 RUN npm install --production --no-progress
 
 USER node
 
-CMD ["npm", "start"]
+CMD ["npm", "server"]
