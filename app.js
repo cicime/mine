@@ -8,8 +8,10 @@ app.set('view engine', 'ejs')
 app.set('views', './views')
 app.use(express.static('./static'))
 
+let count = 0;
 
 app.get('/', (req, res) => {
+  console.log('Home: ', count++);
   res.render('index', { ENV });
 })
 
@@ -20,5 +22,8 @@ app.listen(PORT, function (error) {
     return
   }
 
-  console.log(`APP RUNNING ✧(≖ ◡ ≖✿  — ${ENV} - ${PORT}`);
+  console.log(`
+    APP RUNNING ✧(≖ ◡ ≖✿  — ${ENV} - ${PORT}
+    ${ENV === 'development' ? `http://127.0.0.1:${PORT}`: 'http://diodon.cc/'}
+  `);
 })
